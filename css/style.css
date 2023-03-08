@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap'); /* ul li a */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap'); /* logo*/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +13,17 @@
   font-family: poppins;
   src: url(../Poppins/Poppins-SemiBold.ttf);
 }
+
 @font-face {
   font-family: comfortaa;
   src: url(../Comfortaa/static/Comfortaa-SemiBold.ttf);
 }
+
 @font-face {
   font-family: inter;
   src: url(../Inter/static/Inter-Regular.ttf);
 }
+
 
 header { /*alinhando o conteúdo do header */
   display: flex;
@@ -41,6 +47,7 @@ header #left h1 { /*ajustando o espaçamento entre o h1 do logo da página */
   font-weight: 200;
   font-size: 2rem;
   text-transform: uppercase;
+  font-family: 'Courier Prime';
 }
 
 header #right { /*ajustando a parte da direita do header */
@@ -61,6 +68,11 @@ header #right ul li a {
   color: #fff;
   text-transform: uppercase;
   font-size: 20px;
+  font-family: 'Graduate', sans-serif;
+}
+
+header #right ul li a:hover {
+  text-decoration: underline;
 }
 
 #header {
@@ -187,6 +199,8 @@ header #right ul li a {
   margin: 10px 0 40px 0;
   font-size: 40px;
   font-weight: 200;
+  font-family: inter;
+  color: #032495;
 }
 
 #info {
@@ -219,6 +233,7 @@ header #right ul li a {
 #info-buttons .box p {
   font-size: 25px;
   margin-bottom: 30px;
+  font-family: inter;
 }
 
 @media (max-width: 1050px) {  
@@ -378,11 +393,14 @@ header #right ul li a {
   margin: 0 0 40px;
   font-size: 4em;
   font-weight: normal;
+  font-family: inter;
+  color: #410074;
 }
 
 .principal_informacoes p {
   margin: 0 0 20px;
   font-size: 2.5em;
+  font-family: inter;
 }
 
 .secao-img-info {
@@ -397,6 +415,8 @@ header #right ul li a {
   width: 40%;
   height: 100%;
   font-size: 2.5em;
+  font-family: poppins;
+  font-weight: lighter;
 }
 
 .info-img {
