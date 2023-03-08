@@ -4,13 +4,13 @@
   border: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 header { /*alinhando o conteúdo do header */
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
+  align-items: center;  
 }
 
 header #left { /*ajustando a parte esquerda do header*/
@@ -20,14 +20,14 @@ header #left { /*ajustando a parte esquerda do header*/
   margin: 10px;
 }
 
-header #left img {
+header #left img { /*ajuste da imagem que fica no header*/
   width: 60%;
 }
 
 header #left h1 { /*ajustando o espaçamento entre o h1 do logo da página */
-  margin-left: 10px;
+  margin-left: 5px;
   font-weight: 200;
-  font-size: 40px;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -51,8 +51,6 @@ header #right ul li a {
   font-size: 20px;
 }
 
-
-
 #header {
   position:relative;
   text-align:center;
@@ -62,7 +60,7 @@ header #right ul li a {
 
 .inner-header {
   height:65vh;
-  width:100%;
+  width: 100vw;
   margin: 0;
   padding: 0;
 }
@@ -77,15 +75,20 @@ header #right ul li a {
 .inner-header h2 {
   font-weight: 100;
   letter-spacing: 5px;
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 1.75em;
+  margin-bottom: 10px;
 }
 
 .inner-header h1 {
   font-weight: 100;
   letter-spacing: 5px;
-  font-size: 35px;
-  margin-bottom: 20px;
+  font-size: 2.1em;
+  margin-bottom: 10px;
+}
+
+.inner-header .img-centro {
+  width: 30%;
+  margin-bottom: 1.5%;
 }
 
 .buttons {
@@ -96,11 +99,11 @@ header #right ul li a {
 
 .buttons a {
   margin: 0 25px; 
-  width: auto;
+  width: 100%;
 }
 
 .buttons a img {
-  width: 80%;
+  width: 300px;
   transition: .5s ease;
 }
 
@@ -204,4 +207,104 @@ header #right ul li a {
 #info-buttons .box p {
   font-size: 25px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1050px) {  
+  header #left {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  header #right {
+    margin: 10px auto;
+  }
+
+  header #right ul li a {
+    font-size: clamp(1em, 1em + 1vw, 1.5em);
+  }
+
+  .buttons a img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 860px) {
+  header #right ul li a {
+    font-size: 18px;
+  }
+
+  .buttons a img {
+    width: 200px;
+  }
+
+  .buttons a {
+    margin: 0px; 
+  }
+
+  #hereText {
+    font-size: 30px;
+  }
+
+  #info-buttons {
+    display: block;
+  }
+
+  #info-buttons .box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #info-buttons .box img {
+    width: 150px;
+  }
+
+  #info-buttons .box p {
+    width: auto;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  header #right ul li a {
+    font-size: 14px;
+  }
+
+  .inner-header h2 {
+    font-size: 1.25em;
+  }
+  
+  .inner-header h1 {
+    font-size: 1.5em;
+  }
+
+  .buttons {
+    width: 200px;
+    flex-direction: column;
+    margin: 10px auto 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  header #right ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  header #right ul li a {
+    font-size: 12px;
+  }
+  
+  #info-buttons .box img {
+    width: 100px;
+  }
+
+  #info-buttons .box p {
+    font-size: 14px;
+  }
 }
