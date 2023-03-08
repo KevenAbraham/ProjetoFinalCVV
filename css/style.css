@@ -4,7 +4,19 @@
   border: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  font-size: 16px;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: comfortaa;
+  src: url(../Comfortaa/static/Comfortaa-SemiBold.ttf);
+}
+@font-face {
+  font-family: inter;
+  src: url(../Inter/static/Inter-Regular.ttf);
 }
 
 header { /*alinhando o conteúdo do header */
@@ -60,7 +72,7 @@ header #right ul li a {
 
 .inner-header {
   height:65vh;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -123,7 +135,7 @@ header #right ul li a {
 
 .content {
   position:relative;
-  height:20vh;
+  height:auto;
   text-align:center;
   background-color: white;
 }
@@ -164,7 +176,7 @@ header #right ul li a {
     min-height:40px;
   }
   .content {
-    height:30vh;
+    height:auto;
   }
   h1 {
     font-size:24px;
@@ -307,4 +319,268 @@ header #right ul li a {
   #info-buttons .box p {
     font-size: 14px;
   }
+}
+
+#hereText { /*deve mudar a fonte >>AREA TITULO<<*/
+  margin: 10px 0 40px 0;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+#info {
+  background-image: url(../imagens/bg-img.png);
+  background-size: cover;
+}
+
+/* conteúdo abaixo da área do parallax e afins */
+#info-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#info-buttons .box {
+  width: 20%;
+  margin-top: 30px;
+}
+
+.box a img {
+  width: 50%;
+  margin-bottom: 10px;
+  transition: .5s ease;
+}
+
+.box a:hover img {
+  width: 55%;
+  transition: .5s ease;
+}
+
+#info-buttons .box p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+/* Lucas */
+
+.principal {
+  background-image: url(../imagens/fundo-main.png);
+  width: 100%;
+  padding: 20vh 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+.container-principal {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.principal_informacoes_titulo {
+  margin: 0 0 40px;
+  font-size: 4em;
+  font-weight: normal;
+}
+
+.principal_informacoes p {
+  margin: 0 0 20px;
+  font-size: 2.5em;
+}
+
+.secao-img-info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60vh;
+  margin: 15vh 0 10vh;
+}
+
+.secao-img-info div {
+  width: 40%;
+  height: 100%;
+  font-size: 2.5em;
+}
+
+.info-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-info {
+  border-radius: 10%;
+}
+
+.botao-link a {
+  width: fit-content;
+  padding: 20px;
+  border: 2px solid #00F;
+  border-radius: 40px;
+  color: #000;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+.botao-link a:hover {
+  background-color: #00F;
+  color: #FFF;
+}
+
+.secao-img-info .container-logos a {
+  display: inline-block;
+  height: min-content;
+}
+
+.logos {
+  display: inline-block;
+  width: 125px;
+}
+
+.logo-youtube {
+  width: 135px;
+}
+
+.roxo {
+  color: #410074;
+}
+
+.principal_podcast .img-info {
+  background-image: url(../imagens/microfone-podcast.jpeg);
+  background-size: cover;
+}
+
+.principal_saiba-mais .img-info {
+  background-image: url(../imagens/maos-unidas.jpeg);
+  background-size: cover;
+}
+
+.principal_voluntario .img-info {
+  background-image: url(../imagens/moca-e-senhor.jpeg);
+  background-size: cover;
+}
+
+/* Caio */
+
+.rodape{
+  background-image: url("../imagens/Footer\ image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 884.79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.texto_voluntariado {
+  width: 907px;
+  height: 100% ; /*676px*/
+  display: flex;
+  align-items: center; 
+  /* flex-flow: column; */ 
+  flex-direction: column;  
+  align-content: space-evenly;
+  gap: 15px;
+}
+
+.texto_voluntariado h1{
+  height: auto;
+  width: 907px;
+  font-size: 48px;
+  font-family: poppins;
+  color: #fff;
+  text-align: center;  
+  align-self: center;
+  padding: 40px 0 0 25px;
+}
+.texto_voluntariado p{
+  height: auto;
+  width: 548.33px; /*60.45%*/
+  font-size: 28px;
+  font-family: comfortaa;
+  color: #fff;
+  text-align: center;
+/*padding: 179px;*/
+}
+.texto_voluntariado h4{
+  height: auto;
+  width: 609,76px;
+  font-size: 35px;
+  font-family: poppins;
+  color: #fff;
+  align-items: center;
+
+}
+.texto_voluntariado button{
+  height: auto;
+  width: 198px;
+  font-size: 24px;
+  font-family: inter;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 500px;
+  cursor: pointer;
+
+}
+.texto_voluntariado button a:hover{ /*falta fazer o hover funcionar*/
+  text-decoration: underline;
+}
+.footer-redes{
+  background-image: url("../imagens/Rectangle\ 369.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 148px
+  
+}
+
+.footer-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  /* flex-flow: column; */ 
+  flex-direction: column;  
+  align-content: space-between;   
+
+}
+.footer-redes ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-redes ul li {
+  margin: 20px 10px;
+  text-align: center;
+  align-self: center;
+  
+}
+
+.footer-redes ul li a {
+  text-decoration: none;
+  height: 35px;
+  width: 35px;
+}
+.footer-redes p{
+  font-family: inter;
+  color: #fff;
+  width: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-end;    
+  text-align: center;
+}
+
+.botao-saiba-mais {
+  transition: 200ms;
+}
+
+.botao-saiba-mais:hover {
+  background-color: #FFF;
+  color: #000;
 }
