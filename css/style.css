@@ -478,6 +478,179 @@ header #right ul li a:hover {
   background-size: cover;
 }
 
+/*Cassia*/
+.enderecos-proximos{
+  background-image: url(./img/fundo_final.png);
+  background-size: cover;
+}
+
+.enderecos-proximos_fundo{
+  background-image: url(./img/mapa.png);
+  background-size: cover;
+  position: relative;
+  width: auto;
+  height: 850px;
+  text-align: center;
+  font-size: 1.5rem;
+  word-wrap: normal;
+  color: #fff;
+}
+
+.enderecos-proximos iframe{
+  width: 800px;
+  height: 450px;
+  border-radius: 50px;
+  margin-top: 3%;
+}
+
+.enderecos-proximos p{
+  width: 60%;
+  padding: 5px 10px;
+  margin: 10px;
+  margin-left: 20%;
+  letter-spacing: 2px;
+}
+
+.enderecos-proximos h2{
+ padding-top: 5%;
+}
+
+.dicas_para_ajuda{
+  position: relative;
+  background-image: url(./img/segundo_fundo_final.png);
+  background-size: cover;
+}
+
+.dicas_para_ajuda h1{
+  text-align: center;
+  color: #FF7B01;
+  padding-top: 90px;
+  margin-bottom: 25vh;
+  font-size: 2.5rem;
+}
+
+.porcelana{
+  display: flex;
+  justify-content: flex-start;
+  margin: 50px;
+  
+}
+.porcelana p{
+  position: absolute;
+  
+top: 700px;
+left: 55px;
+width: 42%;
+font-size: 1.3rem;
+text-align: center;
+}
+
+.dicas_para_ajuda_botao_porcelana{
+  position: absolute;
+  align-items: center;
+  border: 4px solid #FF7B01;
+  border-radius: 35px;
+  padding: 8px 20px;
+  margin-top: 7%;
+  margin-left: 20%;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.meditacao{
+  display: flex;
+  justify-content: flex-end;
+  margin: 3%;
+  margin-top: -420px;
+  margin-left: -300%;
+}
+.meditacao p{
+position: absolute;
+top: 700px;
+left: 730px;
+width: 42%;
+font-size: 1.3rem;
+text-align: center;
+}
+
+.dicas_para_ajuda_botao_meditacao{
+  position: absolute;
+  align-items: center;
+  border: 4px solid #FF7B01;
+  border-radius: 35px;
+  padding: 8px 20px;
+  margin-top: 7%;
+  margin-left: 70%;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.natural{
+  display: flex;
+  justify-content: flex-start;
+  margin: 25px;
+  margin-top: 100px;
+  padding-top: 10%;
+}
+
+.natural p{
+position: absolute;
+top: 1530px;
+left: 55px;
+width: 42%;
+font-size: 1.3rem;
+text-align: center;
+}
+
+.dicas_para_ajuda_botao_natural{
+  position: absolute;
+  align-items: center;
+  border: 4px solid #FF7B01;
+  border-radius: 35px;
+  padding: 8px 20px;
+  margin-top: 9.8%;
+  margin-left: 20%;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+
+.alongamento{
+  display: flex;
+  justify-content: flex-end;
+  margin: 2%;
+  margin-top: -210px;
+  padding-top: -3%;
+  margin-left: 30%;
+}
+
+.alongamento p{
+position: absolute;
+top: 1530px;
+left: 700px;
+width: 42%;
+font-size: 1.3rem;
+text-align: center;
+}
+
+.dicas_para_ajuda_botao_alongamento{
+  position: absolute;
+  align-items: center;
+  border: 4px solid #FF7B01;
+  border-radius: 35px;
+  padding: 8px 20px;
+  margin-top: 10.1%;
+  margin-left: 68%;
+  font-size: 1.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+
+
 /* Caio */
 
 .rodape{
