@@ -478,6 +478,100 @@ header #right ul li a:hover {
   background-size: cover;
 }
 
+/* MAPS */
+#maps {
+  width: 100%;
+  background: url(../imagens/bg-maps.png);
+  background-size: cover;
+}
+
+.blogTitle {
+  font-family: inter;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  padding: 50px 0;
+}
+
+.api-maps {
+  width: 100%;
+}
+
+.api-maps iframe {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.maps-desc {
+  width: 100%;
+  font-family: inter;
+  font-size: 32px;
+  color: #fff;
+  padding: 40px 0 80px 0;
+  text-align: center;
+}
+
+/* BLOG */
+#blog {
+  height: auto;
+  background-image: url(../imagens/bg-img.png);
+  width: 100%;
+  align-items: center;
+}
+
+#blog h1 {
+  padding: 80px 0 60px 0;
+  font-family: inter;
+  font-size: 40px;
+  color: #FF7B01;
+  text-align: center;
+}
+
+#blog .container-box {
+  position: relative;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+#blog .container-box .boxImgTextButton {
+  width: 40%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.boxImgTextButton img {
+  width: 100%;
+}
+
+.boxImgTextButton p {
+  margin: 20px 0 30px 0;
+  font-family: inter;
+  font-size: 20px;
+}
+
+.boxImgTextButton a {
+  font-size: 24px;
+  padding: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #FF7B01;
+  border: 2px solid #FF7B01;
+  border-radius: 40px;
+  transition: .25s ease;
+}
+
+.boxImgTextButton a:hover {
+  background-color: #FF7B01;
+  color: #fff;
+  transition: .25s ease;
+}
+
 /* Caio */
 
 .rodape{
